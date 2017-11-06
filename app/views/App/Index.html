@@ -16,9 +16,16 @@
       {{template "flash.html" .}}
     </div>
   </div>
-  <form action="/App/Hello" method="GET">
-    <input type="text" name="myName" /><br/>
-    <input type="submit" value="Say hello!" />
+  <form action="/users" method="POST">
+    <label>Name</label>
+    <input type="text" name="name" /><br/>
+
+    <label>Email</label>    
+    <input type="text" name="email" /><br/>
+
+    <label>Password</label>    
+    <input type="text" name="password" /><br/>
+    <input type="submit" value="Create a User" />
 </form>
 </div>
 
