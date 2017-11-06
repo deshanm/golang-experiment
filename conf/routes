@@ -8,9 +8,12 @@ module:testrunner
 
 
 GET     /                                       App.Index
-GET     /App/Hello                              App.Hello
 
-GET     /users                                  Users.List
+GET     /users                                  Users.Index
+GET     /users/:id                              Users.UserById
+POST    /users                                  Users.CreateUser
+PUT     /users                                  Users.UpdateUser
+DELETE  /users/:id                              Users.DeleteUser
 
 # Ignore favicon requests
 GET     /favicon.ico                            404
