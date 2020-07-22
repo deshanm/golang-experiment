@@ -5,11 +5,11 @@ A high-productivity web framework for the [Go language](http://www.golang.org/).
 
 ### Start the web server:
 
-   revel run myapp
+revel run myapp
 
 ### Go to http://localhost:9000/ and you'll see:
 
-    "It works"
+"It works"
 
 ## Code Layout
 
